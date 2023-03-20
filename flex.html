@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+            img{
+                max-width:100%;
+            }
+            body{
+                margin:0;
+            }
+            .box{
+                display: flex;
+                justify-content: center;
+            }
+            .container{
+                width:80%;
+            }
+            .bgcolor1{
+                background-color: rgb(29, 29, 29);
+                padding-bottom: 30px;
+            }
+            .bgcolor2{
+                background-color: black;
+                padding-bottom: 30px;
+            }
+            .row1{
+                display:flex;
+                flex-wrap: wrap;
+            }
+            .row1>div{
+                width:50%;
+            }
+            .row1 h2{
+                margin:0;
+                font-size: 40px; 
+                padding-top: 30px; 
+            }
+            .row1 p{
+               margin:0;
+            }
+            span{
+                color: rgb(214, 33, 93);
+            }
+            .menu {
+                text-align: right;
+                padding: 55px 0px;
+            }
+            .menu a{
+                text-decoration: none;    
+                color:gray;                         
+                padding:30px 15px;
+                font-size:20px;
+                font-weight: 100;
+                margin: 0 10px;   
+            }
+            .menu a:hover{
+                background:rgba(171, 6, 94);
+                color:white;
+                border-radius: 50px;  
+                transition:1s;              
+            }
+            .cols{
+                display:flex;
+                flex-wrap:wrap;
+                padding-top: 20px;
+                
+            }
+            .cols div:first-child{
+                width:25%;
+                color:white;
+                
+            }
+            .cols div:nth-child(2){
+                width:75%;
+                color:gray;
+            }
+            
+            .row2 h2{
+                color:white;
+                font-size: 40px;
+            }
+            .row3{
+                display:flex;
+                flex-wrap: wrap;
+                justify-content:space-between;
+            }
+            .row3>div{
+                width:20%;
+            }
+            .col img{
+                height:150px;
+            }
+            .col h3{
+                margin:0;
+                font-size: 30px;
+                padding: 20px 0px;
+                color:white;
+            }
+            .col p{
+                margin:0;
+                color:gray;
+                padding: 10px 0px 30px 0px;
+            }
+            .col h4{
+                color:white;
+                margin:0;
+                padding:20px 0px 0px 0px;
+            }
+            .col button{
+                background-color: rgb(143, 0, 62);
+                padding: 10px 20px;
+                border:0;
+                color:white;
+            }
+            .row4,.row5{
+                display: flex;
+                flex-wrap:wrap;
+            }
+            .row4>div{
+                width:50%;
+                color:white;
+            }
+            .imagecol{
+                display:flex;
+                flex-wrap:wrap;
+                align-items:center;
+                justify-content: space-between;
+            }
+            .imagecol>div{
+                width:48%;
+            }
+            .imagecol div:nth-child(2) p{
+                color:gray;
+            }
+            .imagecol ul{
+                color:rgb(184, 20, 74);
+                list-style: none;
+                display: inline-block;
+                line-height: 2;
+                padding: 0;
+            }
+            .ul{
+                display: flex;
+                justify-content: space-between;
+            }
+            li::before{
+                content:"\203A";
+                padding-right: 10px;
+                font-weight: bolder;
+                font-size: large;
+            }
+            .pic{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding-left:35px;
+            }
+            .pic>div{
+                display: flex;   
+                flex-wrap: wrap;
+                justify-content:space-between;
+            }
+            .pic>div>div{
+                width:25%;
+            }
+            .row5>div{
+                width:50%;
+            }
+            .row5>div:nth-child(2){
+                color:rgb(201, 69, 91);
+            }
+            .row5 p{
+                text-align:right;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="box">
+            <div class="container">
+                <div class="row1 ">
+                    <div>
+                        <h2><span>K</span>ata<span>K</span>limt</h2>
+                        <p>Photography</p>
+                    </div>
+                    <div>
+                        <div class="menu">
+                            <a href="">About</a>
+                            <a href="">Sevices</a>
+                            <a href="">Folio</a>
+                            <a href="">Blog</a>
+                            <a href="">Contact</a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="bgcolor1 box">
+                <div class="container">
+                    <div class="row2">
+                        <div>
+                            <div>
+                                <img src="images/fullimage.png">
+                            </div>
+                        </div>
+                        <div class="cols">
+                            <div>
+                                <h2 style="margin:0"><span>W</span>elcome!</h2>
+                            </div>
+                            <div><span>Click here</span> for more info about this free wibsite template created by TemplateMonster.com. 
+                                This is a Bootstrap template that goes with serveral layout options 
+                                (for desktop,tablet, smartphone landscape and portrait) to fit popular screen resolutions.
+                                The PSO source files of this template are availabe for free for the members of TemplateMonster.com. 
+                                Feel free to get them!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="bgcolor2 box">
+           <div class="container">
+              <div class="row3">
+                    <div  class="col">
+                        <h3>Fashion</h3> 
+                        <img src="images/fashion ss.png">
+                        <h4>At vero eos et accusamus et iusto</h4> 
+                        <p>Odio dignissimos ducimus qui blanditilis praesntium volupatatum.</p>
+                        <button>Read More</button>
+                    </div>
+                    <div  class="col">
+                        <h3>Nature</h3> 
+                        <img src="images/img_3.png">
+                        <h4> Deleniti atque corrupti quos</h4> 
+                        <p>Dolores et ques molestias excepturi sint occaecaati cupiditate non.</p>
+                        <button>Read More</button>
+                    </div>
+                    <div  class="col">
+                        <h3>Love Story</h3> 
+                        <img src="images/img_2.png">
+                        <h4>Similique sunt on culpa qui officia</h4> 
+                        <p>Deserunt mollitia anini,id est laburum et dolorum fuga.</p>
+                        <button>Read More</button>
+                    </div>
+                    <div  class="col">  
+                        <h3>Fine art</h3> 
+                        <img src="images/img_3.png">
+                        <h4>Similique sunt on culpa qui officia</h4> 
+                        <p>Deserunt mollitia anini,id est laburum et dolorum fuga.</p>
+                        <button>Read More</button>
+                    </div>
+              </div>
+           </div>
+        </div >
+        <div class="bgcolor1 box">
+            <div class="container">
+              <div class="row4">
+                 <div class="imagecol4">
+                    <h2>Shorthly about me</h2>
+                    <div class="imagecol">
+                        <div>
+                            <img src="images/image_5.png">
+                        </div>
+                        <div>
+                            <h4>Sed ut perspictis unde omins natus error volupatem acuusantuim doloue laundantuim,totam rem.</h4>  
+                            <p> Aperiam, eaque ipsa quae ab illo vertatias et beatae vitaww dicta sunt explicabo nemo enim ipsam voluptatem qula 
+                            voluptas sit aspernatur aut odit aut fugit sed</p>
+                            <hr>
+                            <div class="ul">
+                                <ul>
+                                    <li>Compaigns</li>
+                                    <li>Portraits</li>
+                                    <li>Fashion</li>
+                                    <li>Fine Art</li>
+                                </ul>
+                                <ul>
+                                    <li>Advertising</li>
+                                    <li>Lifestyles</li>
+                                    <li>Love story</li>
+                                    <li>Landscape</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>    
+                 </div>
+                 <div class="pic" >
+                    <h2>Photoshoot</h2>
+                    <div>
+                        <div><img src="images/kataklimt-last-r1-c1.jpg"></div>
+                        <div><img src="images/kataklimt-last-r1-c2.jpg"></div>
+                        <div><img src="images/kataklimt-r1-c3.jpg"></div>
+                        <div><img src="images/kataklimt-r1-c4.jpg"></div>
+                    </div>
+                    <div>
+                        <div><img src="images/kataklimt-r2-c1.jpg"></div>
+                        <div><img src="images/kataklimt-r2-c2.jpg"></div>
+                        <div><img src="images/kataklimt-r2-c3.jpg"></div>
+                        <div><img src="images/kataklimt-r2-c4.jpg"></div>
+                    </div>
+                    <div>
+                        <div><img src="images/kataklimt-r3-c1.jpg"></div>
+                        <div><img src="images/kataklimt-r3-c2.jpg"></div>
+                        <div><img src="images/kataklimt-r3-c3.jpg"></div>
+                        <div><img src="images/kataklimt-r3-c4.jpg"></div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+        </div>
+        <div class="box">
+           <div class="container">
+              <div class="row5">
+                  <div>
+                    <h3>&#169 Copyright</h3>
+                  </div>
+                  <div>
+                    <p>
+                        <i class="fa-brands fa-facebook fa-2x"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-square-twitter fa-2x"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-linkedin fa-2x"></i>&nbsp;&nbsp;
+                        <i class="fa-brands fa-google fa-2x"></i>&nbsp;&nbsp;
+                    </p>
+                  </div>
+              </div>
+           </div>
+        </div>
+    </body>
+</html>
